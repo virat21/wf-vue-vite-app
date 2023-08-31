@@ -1,11 +1,11 @@
 {
-  "name": "simpleicons-search",
+  "name": "starter-proj",
   "version": "1.0.0",
   "private": true,
   "main": "main.js",
   "scripts": {
     "dev": "npm install && concurrently -r \"npm run watch-vite\" \"webflow extension serve\"",
-    "build": "npm run build-vite",
+    "build": "npm run build-vite && webflow extension bundle",
     "preview": "vite preview",
     "serve-webflow": "webflow extension serve",
     "build-vite": "vite build",

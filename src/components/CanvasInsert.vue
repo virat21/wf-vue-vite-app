@@ -1,6 +1,5 @@
 <template>
-    <h1>My Extension</h1>
-  
+    <h1>My Webflow App</h1>
     <div class="card">
       <button type="button" @click="handleSubmit">Add text here</button>
     </div>
@@ -24,8 +23,3 @@
   /* Your component's styles here */
   </style>
   
-  <style scoped>
-  .read-the-docs {
-    color: #888;
-  }
-  </style>

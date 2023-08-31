@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import CanvasInsert from './components/CanvasInsert.vue'
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
+  <CanvasInsert msg="Vite + Vue" />
 </template>
 
 <style scoped>
