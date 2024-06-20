@@ -3,17 +3,20 @@
   "version": "1.0.0",
   "private": true,
   "main": "main.js",
+  "type": "module",
   "scripts": {
-    "dev": "npm install && concurrently -r \"npm run watch-vite\" \"webflow extension serve\"",
+    "dev": "vite dev --config vite-dev.config.js",
     "build": "npm run build-vite && webflow extension bundle",
+    "dev:noreload": "npm install && concurrently -r \"npm run watch-vite\" \"webflow extension serve\"",
     "preview": "vite preview",
     "serve-webflow": "webflow extension serve",
     "build-vite": "vite build",
-    "watch-vite": "vite build --watch" 
-    },
+    "watch-vite": "vite build --watch"
+  },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.4",
     "@webflow/designer-extension-typings": "*",
+    "@xatom/wf-app-hot-reload": "^1.0.0",
     "concurrently": "*",
     "vite": "^4.4.9",
     "vue": "^3.3.4"
